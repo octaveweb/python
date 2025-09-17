@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}  {% endblock %}</title>
+    <style>
+        nav,footer{
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px 5px;
+        }
+        nav{
+                  background-color: black;
+            color: white;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+        nav ul li{
+            padding: 0 20px;
+
+        }
+        footer{
+                  background-color: #dbdbdb;
+            color: #000000;
+        }
+        div{
+            margin: 2pc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <div>
+        {% block content %} {% endblock %}
+    </div>
+    <footer>
+        Footer Section
+    </footer>
+</body>
+</html>

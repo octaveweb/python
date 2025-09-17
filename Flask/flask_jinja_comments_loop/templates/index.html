@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class - XII - GBGVP</title>
+</head>
+<body>
+    <h1>Marks</h1>
+    <ul>
+        {# This is comment in Jinja #}
+
+        {% for key in marks.keys() %}
+            <li>Marks of {{key}}: {{marks.get(key)}}</li>
+        {% endfor %}
+        
+        
+    </ul>
+    <h3>Well done to</h3>
+    {% for key in marks.keys() %}
+           {% if marks.get(key) >= 18 %}
+                <p>Marks of {{key}}: {{marks.get(key)}}</p>
+           {% endif %}
+    {% endfor %}
+
+</body>
+</html>
