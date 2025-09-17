@@ -1,0 +1,1 @@
+print("name: \t My name is Karan Swaranakar\n age: \t 20\n degnation: \t Student \n")
